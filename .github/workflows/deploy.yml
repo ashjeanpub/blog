@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: yarn
+          cache: npm
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Test build website
@@ -45,5 +45,5 @@ jobs:
         run: |
           git config --global user.email "ashjean.pub@gmail.com"
           git config --global user.name "ashjeanpub"
-          yarn install --frozen-lockfile
-          yarn deploy
+          npm ci
+          npm run build
