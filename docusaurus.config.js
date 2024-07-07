@@ -24,7 +24,6 @@ const config = {
   projectName: 'blog', // Usually your repo name.
   trailingSlash: false,
   //
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
